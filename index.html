@@ -1,38 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Support</title>
+    <title>دعم تطبيق دون DAWEN</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            direction: rtl;
             background-color: #f4f4f4;
         }
         .container {
-            text-align: center;
+            max-width: 800px;
+            margin: auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        h1, h2, p {
+            text-align: center;
+        }
+        .contact-info, .faq, .contact-form {
+            margin-bottom: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>App Support</h1>
-        <p>If you need help with our app, please contact us:</p>
-        <p>Email: support@example.com</p>
-        <p>Phone: +123 456 7890</p>
-        <h2>FAQ</h2>
-        <p><strong>Q:</strong> How do I reset my password?<br><strong>A:</strong> Click on the "Forgot Password" link on the login page.</p>
-        <!-- Add more FAQs as needed -->
+        <h1>دعم تطبيق دون DAWEN</h1>
+        <div class="contact-info">
+            <h2>معلومات التواصل</h2>
+            <p>إذا كنت بحاجة إلى مساعدة بخصوص تطبيقنا، يمكنك الاتصال بنا على:</p>
+            <p>البريد الإلكتروني: <a href="mailto:sajelha.sa@gmail.com">sajelha.sa@gmail.com</a></p>
+            <p>رقم الهاتف: <a href="tel:+966504490078">+966504490078</a></p>
+        </div>
+        <div class="faq">
+            <h2>الأسئلة الشائعة</h2>
+            <p><strong>س: كيف يمكنني إعادة تعيين كلمة المرور؟</strong><br>ج: انقر على رابط "نسيت كلمة المرور" في صفحة تسجيل الدخول.</p>
+            <!-- Add more FAQs as needed -->
+        </div>
+        <div class="contact-form">
+            <h2>إرسال رسالة</h2>
+            <form action="mailto:sajelha.sa@gmail.com" method="post" enctype="text/plain">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="اسمك" required>
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" rows="4" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
